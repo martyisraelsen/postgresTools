@@ -99,6 +99,7 @@ sub dumpSlotChanges {
         }
     }
 
+    # Now loop over each change record from pg_logical_slot...
     while (my $ref = $sth->fetchrow_hashref) {
         if (valid_json ($ref->{data})) {
             $data = parse_json ($ref->{data});
