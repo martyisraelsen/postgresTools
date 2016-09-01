@@ -2,7 +2,7 @@
 ## Author:  Marty Israelsen (marty.israelsen@usurf.usu.edu)
 ## Date:    Aug 26th 2016
 
-## Usage:   perl ./dumpLogical --slot=test_slot1 --outputFile=test.out --host=localhost --port=5432 --user=postgres
+## Usage:   perl ./dumpLogical --slot=test_slot1 --outputFile=test.out --db=postgres --host=localhost --port=5432 --user=postgres
 ## Usage:   perl ./dumpLogical --slot=test_slot2 --peek
 ## Description:  This script will dump out (in SQL format) from a postgres slot using pg_logical_slot_get_changes() or pg_logical_slot_peek_changes()
 
